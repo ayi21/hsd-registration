@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Hawd Sa Duwa Season 6 - Registration</title>
+</head>
+<body>
+    <div class="mt-5 container">
+       <div class="d-flex align-items-center"> 
+            <div class="me-3">
+                <img src="./assets/hawd.png" width="100" alt="HsD Logo">
+            </div>
+            <div>
+                <h1 class="d-flex align-self-end fs-2 d-block d-sm-none">Hawd sa Duwa Registration</h1>
+                <h1 class="d-flex align-self-end fs-3 d-none d-sm-block">Hawd sa Duwa Registration</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="rounded p-3 mb-5 container border border-2 bg-light border-dark">
+        <span class="text-dark fst-italic">Fill out the form carefully for registration. All * are required.</span>
+        
+        <form>
+            <fieldset class="border border-2 border-dark p-3">
+                <legend class="px-2 w-auto">Personal Info</legend>
+                  
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="firstName">First Name <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Player's First Name" required>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="lastName">Last Name <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Player's Last Name" required>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="nickName">Nickname</label>
+                        <input type="text" class="form-control" id="nickName" name="nickName" placeholder="Player's Alias">
+                    </div>
+                </div>
+    
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label for="phoneNumber">Phone <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="emailAddress">Email <span style="color: red;">*</span></label>
+                        <input type="email" class="form-control" id="emailAddress" name="emailAddress" placeholder="example@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    </div>
+                </div>
+    
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <label for="gender">Gender <span style="color: red;">*</span></label>
+                        <select class="form-select" id="gender" name="gender" required>
+                            <option selected>Select One</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="age">Age <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="age" name="age" placeholder="Age" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="dob">Date of Birth <span style="color: red;">*</span></label>
+                        <input type="date" class="form-control" id="dob" name="dob" placeholder="MM/DD/YYYY" required>
+                    </div>
+                </div>
+    
+                <div class="row mt-3">
+                    <div class="col-12 mb-2">
+                        <label for="address">Address <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="address" name="address" placeholder="Complete Address" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="city">City <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="city" name="city" placeholder="City" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="zip">Zip <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="zip" name="zip" placeholder="Zip" required>
+                    </div>
+                </div>
+    
+                <div class="row mt-3">
+                    <div class="col-md-6 mb-3">
+                        <label>Are you a Filipino? <span style="color: red;">*</span></label>
+                        <div class="form-check mt-2">
+                            <input type="radio" class="form-check-input" id="radio1" name="nationality" value="filipino">
+                            <label class="form-check-label" for="radio1">Filipino</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="nationality" value="non-filipino">
+                            <label class="form-check-label" for="radio2">Non-Filipino</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="avatar">Upload your picture: <span style="color: red;">*</span></label>
+                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+                        <div id="photoHelpBlock" class="form-text">Your photo must be in JPG or PNG format, with a maximum size of 5MB. </div>
+                    </div>
+                </div>
+
+                
+            </fieldset>
+    
+            <fieldset class="border border-2 border-dark p-3">
+                <legend class="px-2 w-auto">Skills / Team Info</legend>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="affiliation">Sport Affiliation <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="affiliation" name="affiliation" placeholder="Sport Affiliation (e.g., Varsity, Club, Amateur, Professional)" required>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <label for="volleyballLevel">What is your volleyball skill level? <span style="color: red;">*</span></label>
+                        <select class="form-select" id="volleyballLevel" name="volleyballLevel" required>
+                            <option selected disabled>Select your level</option>
+                            <option value="beginner">Beginner (New to the game, learning basics)</option>
+                            <option value="recreational">Recreational (Plays for fun, basic skills)</option>
+                            <option value="intermediate">Intermediate (Consistent skills, understands rotations)</option>
+                            <option value="advanced">Advanced (Competitive player, strong fundamentals)</option>
+                            <option value="competitive">Competitive/League (Plays in leagues/tournaments)</option>
+                            <option value="professional">Professional (Elite/Collegiate/Pro level)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <label for="teamColor">Team Color <span style="color: red;">*</span></label>
+                        <select class="form-select" id="teamColor" name="teamColor" required>
+                            <option selected disabled>Select your Team Color</option>
+                            <option value="black">Black</option>
+                            <option value="blue">Blue</option>
+                            <option value="gray">Gray</option>
+                            <option value="green">Green</option>
+                            <option value="purple">Purple</option>
+                            <option value="red">Red</option>
+                            <option value="white">White</option>
+                            <option value="kayumanggi">Kayumanggi</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="pink">Pink</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="otherTeamColor">Team Color(if not on the list)</label>
+                        <input type="text" class="form-control" id="otherTeamColor" name="otherTeamColor" placeholder="Team Name" disabled>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="teamName">Team Name <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="teamName" name="teamName" placeholder="Team Name" required>
+                    </div>
+                </div>
+            </fieldset>
+    
+            <fieldset class="border border-2 border-dark p-3">
+                <legend class="px-2 w-auto">Emergency Info & Waiver</legend>
+                <label for="waiver">Please read the Waiver:</label>
+    
+                <textarea id="waiver" name="waiver" class="form-control" readonly rows="10" style="resize: none;">
+In consideration of being allowed to participate in the volleyball tournament named "Hawd Sa Duwa" (the "Tournament"), I, the undersigned participant, hereby acknowledge and agree to the following terms and conditions: 
+
+Assumption of Risk: I understand that participating in the Tournament involves inherent risks, including but not limited to the risk of injury, accidents, falls, collisions, and other unforeseen events. I voluntarily assume all such risks associated with my participation.
+
+Health and Fitness: I certify that I am physically fit and have no known medical condition that would prevent my participation in the Tournament. I agree to promptly inform the Tournament organizers of any changes in my health or fitness that may affect my ability to participate safely.
+
+Release and Waiver: I hereby release, discharge, and hold harmless the organizers, sponsors, host venue, officials, staff, and volunteers associated with the Tournament from any and all claims, damages, liabilities, or actions of any kind that may arise from or in connection with my participation in the Tournament, including but not limited to personal injury, property damage, or loss.
+
+Indemnification: I agree to indemnify and hold harmless the Tournament organizers, sponsors, host venue, officials, staff, and volunteers from any and all claims, damages, liabilities, or actions brought against them arising from my participation in the Tournament, including but not limited to claims by third parties, other participants, or spectators.
+
+Medical Treatment: In the event of an emergency, I authorize the Tournament organizers to obtain or provide medical treatment or assistance as deemed necessary. I understand that I will be responsible for any medical expenses incurred on my behalf.
+
+Photography and Videography: I consent to the use of photographs, videos, or other media capturing my image or likeness during the Tournament for promotional purposes by the Tournament organizers and their sponsors without any compensation to me. 
+
+Acknowledgment of Rules and Conduct: I agree to abide by all rules and regulations set forth by the Tournament organizers and conduct myself in a respectful manner towards other participants, officials, and spectators.
+
+COVID-19 Disclaimer: I acknowledge the contagious nature of COVID-19 and voluntarily assume the risk that I may be exposed to or infected by COVID-19 by participating in the Tournament. I agree to comply with all COVID-19 safety protocols implemented by the organizers.
+
+Personal Information: I understand that by registering for the Tournament, I have provided personal information, including my full name. I consent to the collection, use, and storage of this information by the Tournament organizers for administrative and communication purposes related to the Tournament. The organizers agree to handle my personal information in accordance with applicable privacy laws and regulations.
+
+I acknowledge that I have read this waiver carefully, understand its contents, and voluntarily agree to its terms. I further acknowledge that by signing this waiver, I am waiving certain legal rights I or my heirs, executors, administrators, or assigns may have against the Tournament organizers and other parties involved.
+                </textarea>
+    
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label for="emergencyContact">Emergency Contact Info <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="emergencyContact" name="emergencyContact" placeholder="Complete Name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="emergencyPhone">Phone <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="emergencyPhone" name="emergencyPhone" placeholder="Mobile Number">
+                    </div>
+                    <div class="col">
+                        <label for="guardianName">Parent/Guardian Name (if participant is a minor)</label>
+                        <input type="text" class="form-control" id="guardianName" name="guardianName" placeholder="Complete Name" disabled>
+                    </div>
+                </div>
+            </fieldset>
+    
+            <div class="row mt-2">
+                <div class="col d-flex">
+                    <input class="form-check-input" type="checkbox" id="agreementCheck">
+                    <label class="form-check-label ms-2" for="agreementCheck"><span style="color: red;">*</span> I confirm my participation in Hawd sa Duwa - Season 6 and agree to abide by all game rules and regulations. I have read and understand the waiver provided, and I voluntarily accept its terms.</label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary my-3 w-50">SUBMIT</button>
+            </div>
+        </form>
+            
+       
+    </div>
+    
+    
+    <footer>HsD 2025</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
