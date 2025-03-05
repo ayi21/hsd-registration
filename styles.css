@@ -11,6 +11,10 @@ label {
     font-weight: bold;
 }
 
+.agree_label {
+    font-size: 1.1rem;
+}
+
 fieldset {
     display: block;
     width: 100%;

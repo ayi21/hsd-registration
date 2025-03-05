@@ -7,28 +7,14 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <title>Hawd Sa Duwa Season 6 - Registration</title>
 </head>
 <body>
-    <div class="mt-5 container">
-       <div class="d-flex align-items-center"> 
-            <div class="me-3">
-                <img src="./assets/hawd.png" width="100" alt="HsD Logo">
-            </div>
-            <div>
-                <h1 class="d-flex align-self-end fs-2 d-block d-sm-none">Hawd sa Duwa Registration</h1>
-                <h1 class="d-flex align-self-end fs-3 d-none d-sm-block">Hawd sa Duwa Registration</h1>
-            </div>
-        </div>
-    </div>
+    <img src="./assets/HsD-reg-header.png" class="img-fluid mb-3" alt="HsD Header">
 
-    <div class="rounded p-3 mb-5 container border border-2 bg-light border-dark">
-        <span class="text-dark fst-italic">Fill out the form carefully for registration. All * are required.</span>
+    <div class="rounded p-3 mb-2 container">
+        <span class="text-dark fst-italic fs-5">Fill out the form carefully for registration. All * are required.</span>
         
         <form>
             <fieldset class="border border-2 border-dark p-3">
@@ -110,7 +96,7 @@
                     <div class="col-md-6">
                         <label for="avatar">Upload your picture: <span style="color: red;">*</span></label>
                         <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
-                        <div id="photoHelpBlock" class="form-text">Your photo must be in JPG or PNG format, with a maximum size of 5MB. </div>
+                        <div id="photoHelpBlock" class="form-text">Your photo must be in JPG or PNG format. </div>
                     </div>
                 </div>
 
@@ -129,12 +115,12 @@
                         <label for="volleyballLevel">What is your volleyball skill level? <span style="color: red;">*</span></label>
                         <select class="form-select" id="volleyballLevel" name="volleyballLevel" required>
                             <option selected disabled>Select your level</option>
-                            <option value="beginner">Beginner (New to the game, learning basics)</option>
-                            <option value="recreational">Recreational (Plays for fun, basic skills)</option>
-                            <option value="intermediate">Intermediate (Consistent skills, understands rotations)</option>
-                            <option value="advanced">Advanced (Competitive player, strong fundamentals)</option>
-                            <option value="competitive">Competitive/League (Plays in leagues/tournaments)</option>
-                            <option value="professional">Professional (Elite/Collegiate/Pro level)</option>
+                            <option value="beginner" title="New to the game, learning the basics. Playing for fun.">Beginner (New to the game, learning basics) → B (Beginner)</option>
+                            <option value="recreational" title="Plays for fun, has basic skills, and some consistency.">Recreational (Plays for fun, basic skills) → B (Beginner) / Low BB</option>
+                            <option value="intermediate" title="Confident in fundamental skills, understands rotations. Often plays on school teams.">Intermediate (Consistent skills, understands rotations) → BB (Beyond Beginner)</option>
+                            <option value="advanced" title="Competitive player with strong fundamentals and strategy. Plays in leagues or tournaments.">Advanced (Competitive player, strong fundamentals) → A (Advanced)</option>
+                            <option value="competitive" title="Plays in high-level leagues/tournaments with advanced skills and strategies.">Competitive/League (Plays in leagues/tournaments) → A / Low AA</option>
+                            <option value="professional" title="Elite player at the highest level (Collegiate D1, semi-pro, pro).">Professional (Elite/Collegiate/Pro level) → AA / Open</option>
                         </select>
                     </div>
                 </div>
@@ -211,15 +197,15 @@ I acknowledge that I have read this waiver carefully, understand its contents, a
                 </div>
             </fieldset>
     
-            <div class="row mt-2">
+            <div class="row my-2">
                 <div class="col d-flex">
                     <input class="form-check-input" type="checkbox" id="agreementCheck">
-                    <label class="form-check-label ms-2" for="agreementCheck"><span style="color: red;">*</span> I confirm my participation in Hawd sa Duwa - Season 6 and agree to abide by all game rules and regulations. I have read and understand the waiver provided, and I voluntarily accept its terms.</label>
+                    <label class="form-check-label ms-2 fw-normal agree_label" for="agreementCheck"><span style="color: red;">*</span> I confirm my participation in <strong>Hawd sa Duwa - Season 6</strong>, acknowledge that I have read and understand the <strong>Waiver</strong> and <strong><a href="">Rules</a></strong> and agree to abide by all game rules, regulations, and conditions set forth by the organizers.</label>
                 </div>
             </div>
 
             <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-primary my-3 w-50">SUBMIT</button>
+                <button type="submit" class="btn btn-primary my-4 w-50">SUBMIT</button>
             </div>
         </form>
             
@@ -227,7 +213,7 @@ I acknowledge that I have read this waiver carefully, understand its contents, a
     </div>
     
     
-    <footer>HsD 2025</footer>
+    <footer class="text-center"><hr class="m-1"> HsD 2025</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
